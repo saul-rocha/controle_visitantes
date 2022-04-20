@@ -1,11 +1,9 @@
-from tabnanny import verbose
-from unittest.main import MODULE_EXAMPLES
 from django.db import models
 
 from django.contrib.auth.models import (
     BaseUserManager,
     AbstractBaseUser,
-    PermissionsMixin
+    PermissionsMixin,
 )
 
 class UsuarioManager(BaseUserManager):
