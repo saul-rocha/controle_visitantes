@@ -1,7 +1,22 @@
+from statistics import mode
 from django.db import models
 
 
 class Visitante(models.Model):
+
+    STATUS_VISITANTE = [
+        ("AGUARDANDO", "Aguardando autorização"),
+        ("EM_VISITA", "Em visita"),
+        ("FINALIZADO", "Visita finalizada")
+    ]
+
+    status = models.CharField(
+        verbose_name="Status",
+        max_length=10,
+        choices=STATUS_VISITANTE,
+        default="AGUARDANDO"
+    )
+
     nome_completo = models.CharField(
         verbose_name = "Nome Completo",
         max_length = 194,
@@ -83,7 +98,22 @@ class Visitante(models.Model):
         if self.placa_veiculo:
             return self.placa_veiculo
         
-        return "Sem placa"
+        return "Veiculo não registrado"
+
+
+    def get_cpf(self):
+        if self.cpf:
+            cpf = str(self.cpf)
+
+            cpf_parte_um = cpf[0:3]
+            cpf_parte_dois = cpf[3:6]
+            cpf_parte_tres = cpf[6:9]
+            cpf_parte_quatro = cpf[9:]
+
+
+            cpf_formatado = f"{cpf_parte_um}.{cpf_parte_dois}.{cpf_parte_tres}-{cpf_parte_quatro}"
+
+            return cpf_formatado
 
     class Meta:
         verbose_name = "Visitante"
