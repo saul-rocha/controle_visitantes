@@ -19,11 +19,12 @@
     </div>
 
 
-    {% if mensagem in messages%}
+    {% if mensagem in messages %}
         <div class="alert alert-success" role="alert">
             {{ mensagem }}
         </div>
     {% endif %}
+    
     <div class="row">
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-warning shadow h-100 py-2">
@@ -118,7 +119,7 @@
                                 <td>{{ visitante.horario_chegada }}</td>
                                 <td>{{ visitante.get_status_display }}</td>
                                 <td>{{ visitante.get_horario_autorizacao }}</td>
-                                <td>{{ visitante.get_morador_reponsavel }}</td>
+                                <td>{{ visitante.get_morador_responsavel }}</td>
                                 <td>
                                     <a href="{% url 'informacoes_visitante' id=visitante.id %}">
                                         Ver informações

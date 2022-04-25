@@ -41,6 +41,7 @@ INSTALLED_APPS += [
     'porteiros',
     'visitantes',
     'dashboard',
+    'contato',
 ]
 
 MIDDLEWARE = [

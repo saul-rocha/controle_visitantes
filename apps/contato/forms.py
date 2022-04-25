@@ -27,7 +27,7 @@ class VisitanteForm(forms.ModelForm):
 
 class AutorizaVisitanteForm(forms.ModelForm):
 
-    morador_responsavel = forms.CharField(required=True)
+    morador_reponsavel = forms.CharField(required=True)
 
 
     class Meta:

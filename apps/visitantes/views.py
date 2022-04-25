@@ -60,8 +60,8 @@ def informacoes_visitante(request, id):
         )
 
         if form.is_valid():
+            
             visitante = form.save(commit=False)
-
             visitante.status = "EM_VISITA"
             visitante.horario_autorizacao = timezone.now()
 
