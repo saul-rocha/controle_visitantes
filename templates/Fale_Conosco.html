@@ -1,32 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+{% block conteudo %}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo_fale_conosco.css">
+<div class="card shadow mb-4">        
+    <div class="card-body">
+        <h4 class="mb-3 text-primary">
+            Contate-nos
+        </h4>
+    
+        <form action="" method="POST">
+            <div class="col-form-label-lg">
+                <div class="form-group col-md-4">
+                    <label>Nome Completo</label>
+                    <input type="text" class="form-control" value="">
+                </div>
 
-    <title>Contato</title>
-</head>
-<body>
+                <div class="form-group col-md-4">
+                    <label>Email</label>
+                    <input type="text" class="form-control" value="">
+                </div>
+                
+                <div class="form-group col-md-10">
+                    <label>Escreva sua mensagem</label>
+                    <input type="text" class="form-control" value="">
+                </div>
+            </div>
+            
 
-    <form>
+        </form>
+    
+        <div class="mr-1 text-right">
+            <a href="{% url 'index' %}" class="btn btn-secondary text-white" type="button">
+                <span class="text">Voltar</span>
+            </a>
+            <a href="{% url 'contato'%}" class="btn btn-secondary text-white" type="button">
+                <span class="text">Cancelar</span>
+            </a>
 
-        <div id="Formulario">
-            <h3 id = "formulario_cabecalho">Quer saber mais? Ou ficou com dúvida em algo?  </h3>
-            <p>Fale conosco, seu contato é muito importante!<br> É so preencher os campos abaixo, rapidinho. </p>
 
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <input type="text" name="assunto" id="assunto" placeholder="Assunto"  required>
-            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia" placeholder="Assunto"></textarea>
-
-            <button class="botao_enviar" type="submit">ENVIAR</button>
+            <button class="btn btn-primary" type="submit">
+                <span class="text">Enviar</span>
+            </button>
         </div>
-    </form>
+    </div>
+</div>
 
-</body>
-</html>
+{% endblock conteudo %}

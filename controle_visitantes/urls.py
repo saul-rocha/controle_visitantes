@@ -9,6 +9,7 @@ from visitantes.views import(
     registrar_visitante, informacoes_visitante, finalizar_visita
 )
 from contato import views as contato_views
+from sobre import views as sobre_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -58,5 +59,11 @@ urlpatterns = [
         contato_views.contato_view,
         name='contato',
     ),
+
+    path(
+        "sobre/",
+        sobre_views.sobre_view,
+        name="sobre"
+    )
 
 ]

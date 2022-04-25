@@ -1,0 +1,330 @@
+body{
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+    text-align: justify;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h3{
+    font-family: Asap, sans-serif;
+    color: #fff;
+}
+
+  
+/*MENU*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    padding: 0px 10%;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+    
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+    
+header{
+    flex-direction: column;
+    text-align: center;
+    background-color: #202020;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    
+
+}
+
+.focus_title {
+    width: 970px;
+    height: 72px;
+    left: 235px;
+    top: 293px;
+
+    margin-top: 40px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+#conteudo{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.text_about {
+    
+    width: auto;
+    height: auto;
+    left: 235px;
+    top: 374px;
+
+    margin-top: 100px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+
+}
+
+.home { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(88, 88, 88);
+    margin-top: 40px;
+}
+
+.home_icones {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+   
+    margin: 10px;
+    
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    padding-top: 8px;
+}
+
+.home_icones img{
+    width: 300px;
+}
+
+.text_home {
+    width: auto;
+
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
+    
+}
+
+.ver_dia {
+    width: auto;  
+    height: auto; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(88, 88, 88);
+    margin-top: 40px;
+    padding: auto;
+}
+
+.text_ver_dia {
+    width: auto;
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
+    margin: 15px;
+}
+.ver_dia_icones{
+    max-width: 450px;
+
+    min-width: 200px;
+    text-align: center;
+}
+
+.ver_dia_icones{
+    align-items: center;
+}
+
+.ver_dia_icones p{ 
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.ver_dia_icones img{ 
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgb(160, 160, 160);
+}
+
+.planejar_dias {
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(88, 88, 88);
+    margin-top: 40px;
+    padding: auto;
+}
+
+.text_planejar_dias {
+    height: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(120, 120, 120, 0.6);
+    padding: 40px;
+}
+
+.planejar_dias_icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 70%;
+
+    max-width: 450px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.planejar_dias_icones img {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgb(160, 160, 160);
+
+}
+
+.button {
+    background-color: #831fe0;
+    font-size: 12px;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    left: 93%;
+    top: 14%; 
+    padding: 5px;
+
+    border: none;
+    color: #FFFFFF;  
+    opacity: 0.6;
+    transition-duration: 0.4s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+      opacity: 1;
+  }
+
+  #nome_de_usuario_tag {
+    background-color: black;
+    font-size: 12px;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    left: 93%;
+    top: 14%; 
+
+    
+    padding-top: 5px;
+    border: 1px solid black;
+    color: #FFFFFF;  
+    opacity: 0.6;
+    transition-duration: 0.4s;
+    margin-top: 20px;
+    margin-bottom: 20px;     
+}
+
+@media screen and (min-width: 768px) {
+
+    nav{
+            flex-direction: row;
+            justify-content: space-around;
+
+    }
+
+    nav ul{
+            flex-direction: row;
+            /*width: 100%;*/
+    }
+
+    nav ul li{
+        margin-left: 20px;
+    }
+
+
+    /*CABECALHO*/
+    header {
+        height: 40px;
+        height: 10vh;
+        justify-content: center;
+    }
+
+    .ver_dia{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*
+
+    .planejar_dias_icones{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    */
+
+    .planejar_dias{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+

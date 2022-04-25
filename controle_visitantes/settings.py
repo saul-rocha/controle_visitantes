@@ -42,6 +42,7 @@ INSTALLED_APPS += [
     'visitantes',
     'dashboard',
     'contato',
+    'sobre',
 ]
 
 MIDDLEWARE = [

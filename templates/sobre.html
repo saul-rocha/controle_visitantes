@@ -1,32 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
+{% block conteudo %}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo_sobre.css">
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Sobre</h1>
+        
+    </div>
+    <p> 
+        O projeto desenvolvido consiste na avaliação final da diciplina de Programação Web 2. Os alunos reponsveis por esse projeto são: 
+    </p>
+    <div class="d-sm-flex align-items-center justify-content-between mb-2">
+        <div class="col-lg-3 text-center">
+            <div class="card mb-4 py-3 border-bottom-primary">
 
-    <title>Sobre</title>
-</head>
-<body>
+                <img class="card-body rounded-circle" src="/static/img/saul.jpg">
+                <div class="card-body">
+                    <b>SAUL ROCHA</b>
 
-    <form>
+                </div>
 
-        <div id="Formulario">
-            <h3 id = "formulario_cabecalho">Sobre</h3>
-            <p> O projeto desenvolvido consiste na avaliação final da diciplina de <b>Programação Web 2</b>. Os os alunos reponsveis por esse projeto são: 
-            <b>SAUL SOUSA DA ROCHA</b>, <b>JEANDERSON GOMES DE SOUSA</b>, <b>FRANCISCO JOSÉ DOS SANTOS REIS</b>. A aplicação web abordada por esse projeto tem como objetivo 
+            </div> 
+        </div>
+
+        <div class="col-lg-3 text-center">
+            <div class="card mb-4 py-3 border-bottom-secondary">
+            
+                <img class="card-body rounded-circle" src="/static/img/jeands.jpg">
+                <div class="card-body">
+                    <b>JEANDERSON GOMES</b>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-3 text-center">
+            <div class="card mb-4 py-3 border-bottom-warning">
+        
+                <img class="card-body rounded-circle" src="/static/img/mikas.jpg">
+                <div class="card-body">
+                    <b>FRANCISCO JOSÉ</b>
+
+                </div>
+
+            </div> 
+        </div> 
+        </div>
+        <p> 
+            A aplicação web abordada por esse projeto tem como objetivo 
             automatizar o processo de registro e administração de visitantes do condomínio Sésamo, provendo uma dashboard que possa ser acessada através de um navegador. Atualmente o condomínio conta com um 
             processo manual e utilizando cadernos como banco de registro das informações referentes aos visitantes e automatizar esse 
             processo se torna essencial por conta da necessidade de otimização das busca e cadastro dos registros, como também 
-            melhorar a experiência de trabalho dos porteiros e ainda armazenar as informações garantindo a segurança e a confiabilidade.</p>
-        </div>
-    </form>
+            melhorar a experiência de trabalho dos porteiros e ainda armazenar as informações garantindo a segurança e a confiabilidade.
+        </p>
+    </div>
+    
 
-</body>
-</html>
+    
+</div>
+    
+{% endblock conteudo %}
+
