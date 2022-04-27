@@ -9,39 +9,48 @@
         </h4>
     
         <form action="" method="POST">
-            <div class="col-form-label-lg">
-                <div class="form-group col-md-4">
-                    <label>Nome Completo</label>
-                    <input type="text" class="form-control" value="">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4"> 
+                {% csrf_token %}
+                {{ form }}
+                
+            </div>
+            <!--
+                <div class="col-form-label-lg">
+                    <div class="form-group col-md-4">
+                        <label>E-mail</label>
+                        <input type="text" class="form-control" value="">
+                    </div>
+    
+                    <div class="form-group col-md-4">
+                        <label>Assunto</label>
+                        <input type="text" class="form-control" value="">
+                    </div>
+                    
+                    <div class="form-group col-md-10">
+                        <label>Escreva sua mensagem</label>
+                        <input type="text" class="form-control" value="">
+                    </div>
                 </div>
 
-                <div class="form-group col-md-4">
-                    <label>Email</label>
-                    <input type="text" class="form-control" value="">
-                </div>
+            -->
+            <div class="mr-1 text-right">
+                <a href="{% url 'index' %}" class="btn btn-secondary text-white" type="button">
+                    <span class="text">Voltar</span>
+                </a>
+                <a href="{% url 'contato'%}" class="btn btn-secondary text-white" type="button">
+                    <span class="text">Cancelar</span>
+                </a>
+    
+                <button class="btn btn-primary" type="submit" value="submit">
+                    <span class="text">Enviar</span>
+                </button>
+    
                 
-                <div class="form-group col-md-10">
-                    <label>Escreva sua mensagem</label>
-                    <input type="text" class="form-control" value="">
-                </div>
             </div>
-            
 
         </form>
     
-        <div class="mr-1 text-right">
-            <a href="{% url 'index' %}" class="btn btn-secondary text-white" type="button">
-                <span class="text">Voltar</span>
-            </a>
-            <a href="{% url 'contato'%}" class="btn btn-secondary text-white" type="button">
-                <span class="text">Cancelar</span>
-            </a>
-
-
-            <button class="btn btn-primary" type="submit">
-                <span class="text">Enviar</span>
-            </button>
-        </div>
+        
     </div>
 </div>
 
