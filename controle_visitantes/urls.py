@@ -10,6 +10,7 @@ from visitantes.views import(
 )
 from contato import views as contato_views
 from sobre import views as sobre_views
+from ajuda import views as ajuda_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -63,7 +64,13 @@ urlpatterns = [
     path(
         "sobre/",
         sobre_views.sobre_view,
-        name="sobre"
+        name="sobre",
+    ),
+
+    path(
+        "ajuda/",
+        ajuda_views.ajuda_view,
+        name="ajuda",
     )
 
 ]
